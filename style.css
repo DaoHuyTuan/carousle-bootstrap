@@ -1,0 +1,79 @@
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.main {
+
+   
+}
+.carousel-main {
+    overflow: hidden;
+    height: 300px;
+    width:600px;
+    position: relative;
+}
+.carousel-item {
+    overflow: hidden;
+    height: 300px;
+    width:600px;
+    position: absolute;
+    display: none;
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    transition: 0.5s;
+}
+.carousel-item.active {
+    display: flex;
+}
+.carousel-controls {
+    height: 300px;
+    width:600px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top:0px;
+}
+.btn-back, .btn-next {
+    background:#ddd;
+    font-size: 16px;
+    border:none;
+    border-radius: 100%;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+}
+.btn-back {
+    left:20px;
+    top:50%;
+    transform: translateY(-50%)
+}
+.btn-next {
+    right:20px;
+    top:50%;
+    transform: translateY(-50%)
+}
+.carousel-item-left {
+    display: flex;
+    transform:translateX(-100%);
+}
+.carousel-item-right {
+    display: flex;
+    transform:translateX(100%);
+}
+.left {
+    transform:translateX(-100%);
+}
+.right {
+    transform:translateX(100%);
+}
